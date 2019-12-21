@@ -172,6 +172,10 @@ static inline NSString *SDBase64DecodedString(NSString *base64String) {
     NSParameterAssert(data);
     UIImage *image;
     
+    if (@available(iOS 13.0, *)) {} else {
+        return image;
+    }
+    
     CGSVGDocumentRef document = SDCGSVGDocumentCreateFromData((__bridge CFDataRef)data, NULL);
     if (!document) {
         return nil;

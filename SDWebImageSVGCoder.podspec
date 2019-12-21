@@ -26,7 +26,7 @@ TODO: Add long description of the pod here.
   s.author           = { 'lizhuoli1126@126.com' => 'lizhuoli1126@126.com' }
   s.source           = { :git => 'https://github.com/SDWebImage/SDWebImageSVGCoder.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '11.0'
   s.tvos.deployment_target = '13.0'
   s.osx.deployment_target = '10.15'
   s.watchos.deployment_target = '6.0'
